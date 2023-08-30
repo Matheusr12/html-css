@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        thead, tfoot {
+            background-color: lightgray;
+            color: black;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: grey;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+    <table>
+        <caption>Estados e Capitais do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col">CAPITAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pará</td>
+                <td>Belém</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>Florianópolis</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>Brasília</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>00999900</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
