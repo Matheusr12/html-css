@@ -14,7 +14,11 @@
             text-align: center;
         }
 
-        iframe#x {
+        p {
+            text-align: justify;
+        }
+
+        iframe.x {
             width: 95vh;
             height: 200px;
             border-radius: 5px;
@@ -27,14 +31,21 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse animi nam accusamus veniam praesentium error aspernatur rem porro molestias? Dolores non reiciendis inventore sapiente voluptatum dolorem odit ratione quia atque?</p>
 
     <ul>
-        <li><a href="pag001.html" target="frame">Pagina 1</a></li>
-        <li><a href="#">Pagina 2</a></li>
-        <li><a href="#">Pagina 3</a></li>
+        <li>
+            <a href="pag001.html" target="frame">Pagina 1</a>
+        </li>
+        <li>
+            <a href="pag002.html" target="frame">Pagina 2</a>
+        </li>
+        <li>
+            <a href="pag003.html" target="frame">Pagina 3</a>
+        </li>
     </ul>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse animi nam accusamus veniam praesentium error aspernatur rem porro molestias? Dolores non reiciendis inventore sapiente voluptatum dolorem odit ratione quia atque?</p>
 
-    <iframe src="" id="x" name="frame">
+    <iframe 
+    srcdoc="<h1>Escolha uma opção acima</h1>" class="x" name="frame">
         infelizmente não foi possível carregar :/
     </iframe>
 
